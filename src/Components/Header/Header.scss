@@ -1,0 +1,27 @@
+.header {
+  display: flex;
+  gap: 1rem;
+  align-items: left;
+  flex-direction: column;
+
+  padding: 1.5rem 0 5.5rem;
+  &__logo-img {
+    height: 4rem;
+    width: 6rem;
+  }
+}
+
+.nav {
+  font-size: 0.81rem;
+  line-height: 0.5rem;
+  width: 100%;
+  background-color: rgb(76, 166, 244);
+  &__list {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+  }
+  &__link {
+    text-decoration: none;
+  }
+}

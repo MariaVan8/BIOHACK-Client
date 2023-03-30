@@ -1,0 +1,84 @@
+{
+  "courses": [
+    {
+      "id": "1",
+      "title": "Basic General Microbiology Course (8:00am-17:00pm)",
+      "topics": [
+        "Culture methods, isolation and seeding of bacteria.",
+        "Food microbiology, cultivation in differential media",
+        "Water microbiology",
+        "Types of staining of bacteria and fungi (Gram, simple, negative)",
+        "Microscope handling and observation",
+        "Cell and colony morphology",
+        "Biochemical tests",
+        "Antibiotic sensitivity and potency tests",
+        "Agar Art."
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Molecular Biology and Immunology Course (8:00am-17:00pm)",
+      "topics": [
+        "DNA extraction, quantification and quality",
+        "PCR",
+        "Electrophoresis",
+        "Microscopic examination of microalgae and their applications in the industry.",
+        "Protein extraction",
+        "Protein Quantification",
+        "ELISA assays",
+        "Principles of cell culture"
+      ]
+    },
+    {
+      "id": "3",
+      "title": "Course Microbiology in Agroindustry: Production of Bioinputs (8:00am-17:00pm)",
+      "topics": [
+        "Sowing in culture media of soil microorganisms",
+        "Observation of yeasts",
+        "Stomata and mycorrhizal spores",
+        "Preparation of organic fertilizer",
+        "Preparation of substrate",
+        "Insecticide and fungicide",
+        "Antifungal potency test preparation of biofertilizers."
+      ]
+    },
+    {
+      "id": "4",
+      "title": "Course Hands on Lab! 8:00-12:00 pm schedule to choose",
+      "topics": [
+        "Preparation and fixation of smears",
+        "Gram stain",
+        "Simple fungus stain",
+        "Biochemical tests",
+        "Culture medium analysis"
+      ]
+    },
+    {
+      "id": "5",
+      "title": "Continuing School of Microbiology: Tuesday -Friday 8:00-12:00PM",
+      "topics": [
+        "Microalgae Culture",
+        "Sources of Microalgae for cultivation",
+        "Selection of Suitable Strain",
+        "Culture Media",
+        "Types of Culture",
+        "Open and closed reactors",
+        "Harvesting",
+        "Advantages and Challenges using Microalgae",
+        "Biofuels",
+        "Agricultural products",
+        "Molecular analysis",
+        "Applications and products from microalgae",
+        "Culture methods, isolation and seeding of bacteria.",
+        "Food microbiology, cultivation in differential media",
+        "Water microbiology",
+        "Types of staining of bacteria and fungi (Gram, simple, negative)",
+        "Microscope handling and observation",
+        "Cell and colony morphology",
+        "Biochemical tests",
+        "Antibiotic sensitivity and potency tests",
+        "Agar Art."
+      ]
+    }
+  ]
+}
