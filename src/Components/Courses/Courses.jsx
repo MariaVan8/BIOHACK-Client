@@ -1,30 +1,35 @@
 import "./Courses.scss";
+import coursesData from "../../courses.json";
 
 function Courses() {
-  // const courseList = document.querySelector(".courses__list");
-
-  // function displayCourses(course) {
-  //     console.log(courseList);
-
-  //     const courseItem = document.createElement("li");
-  //     courseItem.classList.add("course__item");
-
-  //     const courseBox = document.createElement("div");
-  //     courseBox.classList.add("course__info");
-
-  //     const courseDate = document.createElement("p");
-  //     courseDate.innerText = "Date";
-  //     courseDate.classList.add("schedule__main");
+  const courseTitles = coursesData.courses.map((course) => {
+    return {
+      title: course.title,
+      image: course.image,
+      id: course.id,
+    };
+  });
 
   return (
     <>
       <div className="courses__section">
-        <h1 className="courses__title">Courses</h1>
-        <div className="courses"></div>
-        <ul className="courses__list"></ul>
+        <h1 className="courses__header">Selection of Courses</h1>
+      </div>
+      <div className="courses__wrapper">
+        {courseTitles.map((course) => (
+          <div
+            className="courses__box"
+            key={course.id}
+            style={{
+              backgroundImage: `url(${course.image})`,
+            }}
+          >
+            <p className="courses__title"> {course.title}</p>
+            x
+          </div>
+        ))}
       </div>
     </>
   );
 }
-
 export default Courses;

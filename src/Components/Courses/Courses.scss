@@ -1,3 +1,47 @@
-h1 {
-  color: blue;
+.courses {
+  &__header {
+    color: rgb(14, 14, 15);
+    font-size: 1.3rem;
+    text-align: center;
+    font-weight: 700;
+    height: 2.5rem;
+    padding-top: 1rem;
+  }
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  &__image {
+    width: 90%;
+  }
+  &__title {
+    width: 50%;
+    margin-bottom: 3rem;
+    position: relative;
+    color: white;
+    border-radius: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.1);
+    background-position: center;
+  }
+  &__box {
+    width: 100%;
+    height: 10rem;
+    margin-bottom: 3rem;
+    // padding: 0.5rem 1rem 0.5rem 1rem;
+    position: relative;
+    background-color: white;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-size: cover;
+    background-position: center;
+  }
 }

@@ -1,0 +1,79 @@
+.nav {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fcf6f6;
+  color: #1b1a1a;
+  padding: 0.6rem;
+  height: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  &__logo {
+    height: 6rem;
+    width: 7rem;
+    z-index: 1;
+    margin: 0 auto;
+  }
+
+  &__toggle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 1.3rem;
+    cursor: pointer;
+    position: absolute;
+    left: 1rem;
+
+    span {
+      width: 1.5rem;
+      height: 0.2rem;
+      background-color: #232222;
+      transition: all 0.3s ease;
+    }
+  }
+
+  &__links {
+    width: 30vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #222;
+    color: #f8f4f4;
+    list-style: none;
+    top: 0;
+    right: 0;
+    margin: 0;
+    position: fixed;
+    pointer-events: none;
+    transform: translateX(100%);
+    transition: all 0.3s ease;
+    z-index: 1;
+
+    &--open {
+      width: 30vw;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      background-color: #222;
+      list-style: none;
+      top: 0;
+      right: 0;
+      margin: 0;
+      position: fixed;
+      pointer-events: none;
+      transform: translateX(0);
+      transition: all 0.3s ease;
+    }
+  }
+  &__link {
+    padding: 2rem 0rem 0rem 0rem;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #555;
+    }
+  }
+}

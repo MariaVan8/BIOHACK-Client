@@ -3,7 +3,6 @@ import Profile from "./pages/ProfilePage/Profile.jsx";
 import "./App.css";
 import axios from "axios";
 import Header from "./Components/Header/Header";
-import Hero from "./Components/Hero/Hero.jsx";
 import ServicePage from "./pages/ServicePage/ServicePage.jsx";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -98,7 +97,6 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Header />
-        <Hero />
         <Routes>
           <Route path="/services" element={<ServicePage />}></Route>
         </Routes>

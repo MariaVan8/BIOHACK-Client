@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
+import Courses from "../../Components/Courses/Courses";
 
 const baseUrl = "http://localhost:8080";
 const profileUrl = `${baseUrl}/profile`;
@@ -29,7 +30,8 @@ function Profile() {
 
   return (
     <>
-      <h1>Welcome {userInfo.name}!</h1>
+      {/* <h1 cl>Welcome {userInfo.name}!</h1> */}
+      <Courses />
     </>
   );
 }

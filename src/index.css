@@ -1,12 +1,11 @@
-body {
+/* body {
   margin: 0;
   padding: 2rem;
   font-family: sans-serif;
-  background: rgb(10, 5, 86);
   background: linear-gradient(
     90deg,
     rgb(222, 221, 236) 0%,
-    rgb(12, 73, 73) 35%,
-    rgb(1, 15, 22) 100%
+    rgb(193, 205, 205) 35%,
+    rgb(222, 235, 242) 100%
   );
-}
+} */
