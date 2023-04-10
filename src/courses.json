@@ -3,7 +3,8 @@
     {
       "id": "1",
       "image": "images/microscope3.jpg",
-      "title": "Basic General Microbiology Course (8:00am-17:00pm)",
+      "title": "Basic General Microbiology Course",
+      "time": "(8:00am-17:00pm)",
       "topics": [
         "Culture methods, isolation and seeding of bacteria.",
         "Food microbiology, cultivation in differential media",
@@ -19,7 +20,8 @@
     {
       "id": "2",
       "image": "images/pipe2.jpg",
-      "title": "Molecular Biology and Immunology Course (8:00am-17:00pm)",
+      "title": "Molecular Biology and Immunology Course",
+      "time": "(8:00am-17:00pm)",
       "topics": [
         "DNA extraction, quantification and quality",
         "PCR",
@@ -34,7 +36,8 @@
     {
       "id": "3",
       "image": "images/microscope5.jpg",
-      "title": "Course Microbiology in Agroindustry: Production of Bioinputs (8:00am-17:00pm)",
+      "title": "Course Microbiology in Agroindustry: Production of Bioinputs",
+      "time": "(8:00am-17:00pm)",
       "topics": [
         "Sowing in culture media of soil microorganisms",
         "Observation of yeasts",
@@ -48,7 +51,8 @@
     {
       "id": "4",
       "image": "images/microscope4.jpg",
-      "title": "Course Hands on Lab! 8:00-12:00 pm schedule to choose",
+      "title": "Course Hands on Lab!",
+      "time": "8:00-12:00 pm schedule to choose",
       "topics": [
         "Preparation and fixation of smears",
         "Gram stain",
@@ -60,7 +64,8 @@
     {
       "id": "5",
       "image": "images/pipe3.jpg",
-      "title": "Continuing School of Microbiology: Tuesday -Friday 8:00-12:00PM",
+      "title": "Continuing School of Microbiology:",
+      "time": "Tuesday -Friday 8:00-12:00PM",
       "topics": [
         "Microalgae Culture",
         "Sources of Microalgae for cultivation",

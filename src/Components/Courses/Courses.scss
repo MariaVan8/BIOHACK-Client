@@ -20,9 +20,16 @@
   &__image {
     width: 90%;
   }
+  &__time {
+    color: white;
+    padding-left: 1rem;
+  }
   &__title {
-    width: 50%;
+    width: 80%;
     margin-bottom: 3rem;
+    padding-left: 1rem;
+    top: 3rem;
+    font-size: 1.5rem;
     position: relative;
     color: white;
     border-radius: 1rem;
@@ -30,12 +37,14 @@
     background-size: cover;
     background-color: rgba(0, 0, 0, 0.1);
     background-position: center;
+    text-decoration-style: none;
   }
   &__box {
-    width: 100%;
+    width: 90%;
     height: 10rem;
-    margin-bottom: 3rem;
-    // padding: 0.5rem 1rem 0.5rem 1rem;
+    margin-bottom: 1.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
     position: relative;
     background-color: white;
     border-radius: 1rem;
@@ -43,5 +52,6 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     background-size: cover;
     background-position: center;
+    text-decoration: none;
   }
 }

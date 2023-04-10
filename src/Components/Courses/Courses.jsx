@@ -1,14 +1,23 @@
+import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+import axios from "axios";
 import "./Courses.scss";
-import coursesData from "../../courses.json";
+
+const api = "http://localhost:8080";
 
 function Courses() {
-  const courseTitles = coursesData.courses.map((course) => {
-    return {
-      title: course.title,
-      image: course.image,
-      id: course.id,
-    };
-  });
+  const [courses, setCourses] = useState([]);
+
+  useEffect(() => {
+    axios
+      .get(`${api}/courses`)
+      .then((response) => {
+        setCourses(response.data);
+      })
+      .catch((err) => {
+        console.log("err: ", err);
+      });
+  }, []);
 
   return (
     <>
@@ -16,8 +25,9 @@ function Courses() {
         <h1 className="courses__header">Selection of Courses</h1>
       </div>
       <div className="courses__wrapper">
-        {courseTitles.map((course) => (
-          <div
+        {courses.map((course) => (
+          <Link
+            to={`/details/${course.id}`}
             className="courses__box"
             key={course.id}
             style={{
@@ -25,11 +35,12 @@ function Courses() {
             }}
           >
             <p className="courses__title"> {course.title}</p>
-            x
-          </div>
+            <p className="courses__time">{course.time}</p>
+          </Link>
         ))}
       </div>
     </>
   );
 }
+
 export default Courses;

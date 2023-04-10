@@ -11,10 +11,10 @@
   box-sizing: border-box;
   padding-top: 2rem;
   padding-bottom: 2rem;
+
   &__logo {
     height: 6rem;
     width: 7rem;
-    z-index: 1;
     margin: 0 auto;
   }
 
@@ -47,10 +47,9 @@
     right: 0;
     margin: 0;
     position: fixed;
-    pointer-events: none;
     transform: translateX(100%);
     transition: all 0.3s ease;
-    z-index: 1;
+    z-index: 200;
 
     &--open {
       width: 30vw;
@@ -63,9 +62,11 @@
       right: 0;
       margin: 0;
       position: fixed;
-      pointer-events: none;
+      z-index: 900;
       transform: translateX(0);
       transition: all 0.3s ease;
+      padding-left: 1rem;
+      font-weight: 600;
     }
   }
   &__link {
