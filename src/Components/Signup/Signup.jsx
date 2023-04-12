@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import axios from "axios";
+import "../Signup/Signup.scss";
 
 function Signup({ setSignUpToggle }) {
   const baseUrl = "http://localhost:8080";
@@ -22,22 +23,24 @@ function Signup({ setSignUpToggle }) {
   };
 
   return (
-    <div>
-      <h1>Sign Up</h1>
-      <form onSubmit={handleSignup}>
-        <div className="form-group">
-          Username: <input type="text" name="username" />
-        </div>
-        <div className="form-group">
-          Name: <input type="text" name="name" />
-        </div>
-        <div className="form-group">
-          Password: <input type="password" name="password" />
-        </div>
-        <button className="btn btn-primary" type="submit">
-          Signup
-        </button>
-      </form>
+    <div className="form__container">
+      <div className="form__wrapper">
+        <h1 className="form__title">Sign Up</h1>
+        <form onSubmit={handleSignup}>
+          <div className="form-group">
+            Username: <input type="text" name="username" />
+          </div>
+          <div className="form-group">
+            Name: <input type="text" name="name" />
+          </div>
+          <div className="form-group">
+            Password: <input type="password" name="password" />
+          </div>
+          <button className="btn btn-primary" type="submit">
+            Signup
+          </button>
+        </form>
+      </div>
     </div>
   );
 }

@@ -1,21 +1,45 @@
+@use "../../styles/partials/mixin" as *;
+@use "../../styles/partials/variables" as *;
+
 .nav {
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
   justify-content: space-between;
-  background-color: #fcf6f6;
-  color: #1b1a1a;
+  background-color: #1e5887;
+  color: #cec3f6;
   padding: 0.6rem;
   height: 1rem;
   width: 100%;
   box-sizing: border-box;
   padding-top: 2rem;
   padding-bottom: 2rem;
+  z-index: 1000;
+  position: sticky;
+  top: 0;
+  left: 0;
+  // position: fixed;
+
+  @include tablet {
+    justify-content: space-between;
+    align-items: center;
+  }
 
   &__logo {
     height: 6rem;
     width: 7rem;
+    display: flex;
     margin: 0 auto;
+    @include tablet {
+      margin-left: 0;
+    }
+  }
+  &__login {
+    text-decoration: none;
+    position: absolute;
+    @include tablet {
+      right: 16rem;
+    }
   }
 
   &__toggle {
@@ -26,6 +50,9 @@
     cursor: pointer;
     position: absolute;
     left: 1rem;
+    @include tablet {
+      display: none;
+    }
 
     span {
       width: 1.5rem;
@@ -50,6 +77,17 @@
     transform: translateX(100%);
     transition: all 0.3s ease;
     z-index: 200;
+    @include tablet {
+      width: auto;
+      position: absolute;
+      height: auto;
+      flex-direction: row;
+      background-color: transparent;
+      transform: none;
+      align-items: center;
+      z-index: auto;
+      justify-content: flex-end;
+    }
 
     &--open {
       width: 30vw;
@@ -72,9 +110,16 @@
   &__link {
     padding: 2rem 0rem 0rem 0rem;
     cursor: pointer;
+    @include tablet {
+      padding: 0;
+      margin: 1.7rem 1rem;
+      color: #1b1a1a;
+      right: 3.4rem;
+      position: static;
+    }
 
     &:hover {
-      background-color: #555;
+      background-color: #ecdede;
     }
   }
 }

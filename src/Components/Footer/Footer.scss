@@ -1,0 +1,51 @@
+.footer {
+  background-color: rgba(224, 236, 246, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  gap: 1rem;
+  &__icons {
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+  &__bigbox {
+    display: flex;
+    height: 8rem;
+  }
+  &__box {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: space-between;
+    gap: 0.1rem;
+  }
+  &__box1 {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  &__box-test {
+    width: 50%;
+    align-items: center;
+  }
+  &__wrapper {
+    display: flex;
+  }
+  &__container {
+    display: flex;
+    gap: 0.8rem;
+    align-items: center;
+    height: 2rem;
+  }
+  &__text {
+    font-size: 0.6rem;
+  }
+  &__logo {
+    height: 8rem;
+    width: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

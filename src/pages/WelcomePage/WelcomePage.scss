@@ -30,6 +30,28 @@
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
   background-color: rgba(138, 189, 241, 0.2);
 }
+.hero__text {
+  font-size: 0.8rem;
+  background-color: rgb(236, 245, 249);
+  border-radius: 5px;
+  width: 90%;
+  padding: 0.4rem 0rem 0rem 0.8rem;
+  margin-left: 1.4rem;
+  margin-top: 0.5rem;
+  color: rgb(56, 4, 56);
+}
+.page__text {
+  font-size: 0.8rem;
+  background-color: rgb(236, 245, 249);
+  border-radius: 5px;
+  width: 90%;
+  padding: 0.4rem 0rem 0rem 0.8rem;
+  margin-left: 1.4rem;
+  margin-top: 0.5rem;
+  color: rgb(56, 4, 56);
+  padding-bottom: 1rem;
+  margin-bottom: 0.5rem;
+}
 
 .services {
   display: flex;
@@ -45,6 +67,9 @@
   }
   &__box {
     text-decoration: none;
+  }
+  &__container {
+    background-color: rgba(247, 249, 251, 0.5);
   }
 }
 

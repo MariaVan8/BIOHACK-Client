@@ -36,12 +36,12 @@ function CourseDetails() {
     <>
       <div className="details__container">
         <div
-          className="details__title"
+          className="details__box"
           style={{
             backgroundImage: `url('../${course.image}')`,
           }}
         >
-          {course.title}
+          <h1 className="details__title">{course.title}</h1>
         </div>
         <div className="details__wrapper">
           <img className="details__icon" src={calendar} />
@@ -60,7 +60,7 @@ function CourseDetails() {
           {course.topics
             ? course?.topics.map((item, index) => (
                 <p className="details" key={index}>
-                  {item}
+                  - {item}
                 </p>
               ))
             : ""}

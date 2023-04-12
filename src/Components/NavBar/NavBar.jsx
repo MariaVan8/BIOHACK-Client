@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./NavBar.scss";
-import logo from "../../assests/logo/logo.png";
+import logo from "../../assests/logo/logo1.png";
 import { Link } from "react-router-dom";
 
 function NavBar() {
@@ -18,6 +18,9 @@ function NavBar() {
 
   return (
     <div className="nav">
+      <a href="/login" className="nav__login">
+        Login
+      </a>
       <img className="nav__logo" src={logo} />
       <div className="nav__toggle" onClick={toggleMenu}>
         <span></span>

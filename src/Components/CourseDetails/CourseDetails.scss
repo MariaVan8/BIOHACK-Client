@@ -1,14 +1,17 @@
 .details {
   padding: 0.5rem;
-  &__title {
+  &__box {
     background-size: cover;
-    color: rgb(14, 14, 14);
-    font-size: 1.5rem;
-    font-weight: 700;
-    font-family: 600;
+    align-items: center;
     height: 15rem;
     box-shadow: 0 4px 10px rgba(18, 18, 18, 0.4);
     background-size: cover;
+  }
+  &__title {
+    font-size: 1.6rem;
+    justify-content: center;
+    background-color: rgba(69, 205, 205, 0.2);
+    color: rgb(1, 35, 35);
   }
   &__wrapper {
     display: flex;

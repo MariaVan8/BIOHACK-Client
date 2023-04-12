@@ -3,6 +3,7 @@ import { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
+import "../Login/Login.scss";
 
 function Login({ setSignUpToggle }) {
   const [isLoginError, setIsLoginError] = useState(false);
@@ -35,25 +36,30 @@ function Login({ setSignUpToggle }) {
   };
 
   return (
-    <div>
-      <h1>Login</h1>
-      {isLoginError && <label style={{ color: "red" }}>{errorMessage}</label>}
-      <form onSubmit={handleLogin}>
-        <div className="form-group">
-          Username: <input type="text" name="username" />
-        </div>
-        <div className="form-group">
-          Password: <input type="password" name="password" />
-        </div>
-        <button className="btn btn-primary" type="submit">
-          Login
-        </button>
-        <Link to="/signup">
-          <button onClick={() => setSignUpToggle(true)}>
-            I don't have an account
+    <div className="form__container">
+      <div className="form__wrapper">
+        <h1 className="form__title">Login</h1>
+        {isLoginError && <label style={{ color: "red" }}>{errorMessage}</label>}
+        <form onSubmit={handleLogin}>
+          <div className="form-group">
+            Username: <input type="text" name="username" />
+          </div>
+          <div className="form-group">
+            Password: <input type="password" name="password" />
+          </div>
+          <button className="btn__login" type="submit">
+            Login
           </button>
-        </Link>
-      </form>
+          <Link to="/signup">
+            <button
+              onClick={() => setSignUpToggle(true)}
+              className="btn__account"
+            >
+              I don't have an account
+            </button>
+          </Link>
+        </form>
+      </div>
     </div>
   );
 }

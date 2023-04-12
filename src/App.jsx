@@ -10,6 +10,7 @@ import Courses from "./Components/Courses/Courses.jsx";
 import WelcomePage from "./pages/WelcomePage/WelcomePage.jsx";
 import Login from "./Components/Login/Login.jsx";
 import Signup from "./Components/Signup/Signup.jsx";
+import Footer from "./Components/Footer/Footer.jsx";
 
 function App() {
   // const [isSignedUp, setIsSignedUp] = useState(false);
@@ -107,6 +108,7 @@ function App() {
           <Route path="/login" element={<Login />}></Route>
           <Route path="/signup" element={<Signup />}></Route>
         </Routes>
+        <Footer />
       </BrowserRouter>
     </div>
   );
