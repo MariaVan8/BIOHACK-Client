@@ -37,7 +37,7 @@ function NavBar() {
           Home
         </Link>
         <li className="nav__link">Services</li>
-        <Link className="nav__link" to={"/aboutus"}>
+        <Link className="nav__link" onClick={closeMenu} to={"/aboutus"}>
           <li>About Us</li>
         </Link>
       </ul>

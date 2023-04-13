@@ -43,7 +43,7 @@ function WelcomePage() {
       </div>
       <p className="page__text">LET'S MAKE HISTORY TOGETHER!</p>
       <AboutUs />
-      <p className="page__map-text">Find us:</p>
+      <p className="page__map-text">Find Us:</p>
       <div className="page__wrapper">
         <iframe
           className="page__map"
