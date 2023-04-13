@@ -1,11 +1,12 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import hero from "../../assests/Images/hero.png";
+
 import microscope from "../../assests/logo/microscope1.png";
 import lab from "../../assests/logo/laboratory.png";
 import thesis from "../../assests/logo/graduation.png";
 
 import "./../WelcomePage/WelcomePage.scss";
+import AboutUs from "../../Components/AboutUs/AboutUs";
 
 function WelcomePage() {
   return (
@@ -41,15 +42,12 @@ function WelcomePage() {
         </Link>
       </div>
       <p className="page__text">LET'S MAKE HISTORY TOGETHER!</p>
-      <p className="page__map-text">Find us here:</p>
+      <AboutUs />
+      <p className="page__map-text">Find us:</p>
       <div className="page__wrapper">
         <iframe
           className="page__map"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.7960420634586!2d-78.4881284!3d-0.1914706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d59a656b7b7b5d%3A0x5b59af40a7bcbc03!2sEmbajada%20de%20Venezuela!5e0!3m2!1sen!2sca!4v1681244082326!5m2!1sen!2sca"
-          // width="800"
-          // height="200"
-          // style="border:0;"
-          // allowFullScreen=""
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
         ></iframe>

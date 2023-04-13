@@ -21,7 +21,9 @@ function NavBar() {
       <a href="/login" className="nav__login">
         Login
       </a>
-      <img className="nav__logo" src={logo} />
+      <Link className="nav__logo" to={"/"}>
+        <img className="nav__logo" src={logo} />
+      </Link>
       <div className="nav__toggle" onClick={toggleMenu}>
         <span></span>
         <span></span>
@@ -35,7 +37,9 @@ function NavBar() {
           Home
         </Link>
         <li className="nav__link">Services</li>
-        <li className="nav__link">About Us</li>
+        <Link className="nav__link" to={"/aboutus"}>
+          <li>About Us</li>
+        </Link>
       </ul>
     </div>
   );

@@ -13,6 +13,7 @@ import Signup from "./Components/Signup/Signup.jsx";
 import Footer from "./Components/Footer/Footer.jsx";
 import RentalPage from "./pages/RentalPage/RentalPage.jsx";
 import Thesis from "./pages/Thesis/Thesis.jsx";
+import AboutUs from "./Components/AboutUs/AboutUs.jsx";
 
 function App() {
   // const [isSignedUp, setIsSignedUp] = useState(false);
@@ -109,6 +110,7 @@ function App() {
           <Route path="/courses" element={<Courses />}></Route>
           <Route path="/details/:id" element={<CourseDetails />}></Route>
           <Route path="/profile" element={<Profile />}></Route>
+          <Route path="/aboutus" element={<AboutUs />}></Route>
           <Route path="/login" element={<Login />}></Route>
           <Route path="/signup" element={<Signup />}></Route>
         </Routes>
