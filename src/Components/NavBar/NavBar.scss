@@ -18,27 +18,32 @@
   position: sticky;
   top: 0;
   left: 0;
-  // position: fixed;
 
   @include tablet {
     justify-content: space-between;
     align-items: center;
+    height: 1rem;
   }
 
   &__logo {
-    height: 6rem;
-    width: 7rem;
+    height: 4rem;
+    width: 6rem;
     display: flex;
     margin: 0 auto;
     @include tablet {
       margin-left: 0;
+      height: 5rem;
+      width: 8rem;
     }
   }
   &__login {
     text-decoration: none;
     position: absolute;
+    color: #cec3f6;
     @include tablet {
       right: 16rem;
+      font-size: 1.2rem;
+      padding-right: 5rem;
     }
   }
 
@@ -57,7 +62,7 @@
     span {
       width: 1.5rem;
       height: 0.2rem;
-      background-color: #232222;
+      background-color: #f5f9f9;
       transition: all 0.3s ease;
     }
   }
@@ -110,11 +115,13 @@
   &__link {
     padding: 2rem 0rem 0rem 0rem;
     cursor: pointer;
+    color: #cec3f6;
+    font-size: 1rem;
     @include tablet {
       padding: 0;
       margin: 1.7rem 1rem;
-      color: #1b1a1a;
-      right: 3.4rem;
+      font-size: 1.2rem;
+      right: 2.6rem;
       position: static;
     }
 

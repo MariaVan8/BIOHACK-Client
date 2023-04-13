@@ -11,6 +11,8 @@ import WelcomePage from "./pages/WelcomePage/WelcomePage.jsx";
 import Login from "./Components/Login/Login.jsx";
 import Signup from "./Components/Signup/Signup.jsx";
 import Footer from "./Components/Footer/Footer.jsx";
+import RentalPage from "./pages/RentalPage/RentalPage.jsx";
+import Thesis from "./pages/Thesis/Thesis.jsx";
 
 function App() {
   // const [isSignedUp, setIsSignedUp] = useState(false);
@@ -101,6 +103,8 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<WelcomePage />}></Route>
+          <Route path="/rental" element={<RentalPage />}></Route>
+          <Route path="/thesis" element={<Thesis />}></Route>
           <Route path="/services" element={<ServicePage />}></Route>
           <Route path="/courses" element={<Courses />}></Route>
           <Route path="/details/:id" element={<CourseDetails />}></Route>

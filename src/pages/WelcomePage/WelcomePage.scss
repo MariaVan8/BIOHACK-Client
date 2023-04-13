@@ -1,35 +1,65 @@
+@use "../../styles/partials/mixin" as *;
+@use "../../styles/partials/variables" as *;
+
 .hero-container {
   position: relative;
 }
 
 .welcome {
+  background-image: url("../../assests/Images/hero.png");
+  background-size: cover;
   width: 100%;
+  @include desktop {
+    height: 80vh;
+    width: 100vw;
+  }
 }
 
 .hero-title {
   position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: rgba(138, 189, 241, 0.2);
-  font-size: 2rem;
-  color: rgb(255, 255, 255);
+  top: 35%;
+  right: 0;
+  width: 58%;
+  background-image: linear-gradient(
+    to top right,
+    rgba(18, 126, 235, 0.4),
+    rgba(8, 239, 235, 0.4)
+  );
+  font-size: 1.6rem;
+  color: rgb(13, 42, 121);
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  @include tablet {
+    font-size: 2rem;
+    width: 55%;
+  }
+  @include desktop {
+    font-size: 3rem;
+  }
 }
 
 .hero-subtitle {
   position: absolute;
-  top: calc(50% + 2rem);
-  left: 50%;
+  background-color: rgba(138, 189, 241, 0.1);
+  right: 0;
   text-align: center;
-  top: 55%;
-  transform: translateX(-50%);
-  font-size: 1rem;
+  top: 52%;
+  width: 50%;
+  font-size: 0.9rem;
   font-weight: 700;
-  color: white;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-  background-color: rgba(138, 189, 241, 0.2);
+  color: rgb(13, 42, 121);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: rgba(138, 189, 241, 0.1);
+  @include tablet {
+    font-size: 1.7rem;
+    top: 45%;
+    right: 5%;
+  }
+  @include desktop {
+    font-size: 2rem;
+    top: 49%;
+  }
 }
+
 .hero__text {
   font-size: 0.8rem;
   background-color: rgb(236, 245, 249);
@@ -39,18 +69,79 @@
   margin-left: 1.4rem;
   margin-top: 0.5rem;
   color: rgb(56, 4, 56);
+  @include tablet {
+    font-size: 1.3rem;
+  }
+  @include desktop {
+    font-size: 1.8rem;
+    padding: 1rem;
+  }
 }
-.page__text {
-  font-size: 0.8rem;
-  background-color: rgb(236, 245, 249);
-  border-radius: 5px;
-  width: 90%;
-  padding: 0.4rem 0rem 0rem 0.8rem;
-  margin-left: 1.4rem;
-  margin-top: 0.5rem;
-  color: rgb(56, 4, 56);
-  padding-bottom: 1rem;
-  margin-bottom: 0.5rem;
+.page {
+  &__text {
+    font-size: 0.8rem;
+    background-color: rgb(236, 245, 249);
+    border-radius: 5px;
+    width: 70%;
+    padding: 0.4rem 0rem 0rem 0.8rem;
+    margin-left: 1.4rem;
+    margin-top: 0.5rem;
+    color: rgb(56, 4, 56);
+    padding-bottom: 1rem;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+    color: rgb(5, 18, 61);
+    text-align: center;
+    padding-top: 0.5rem;
+    height: 1.5rem;
+    align-items: center;
+    @include tablet {
+      font-size: 1.6rem;
+      color: rgb(10, 57, 95);
+    }
+  }
+  &__wrapper {
+    background-color: rgb(5, 18, 61);
+    width: 100%;
+    @include tablet {
+      width: 75%;
+    }
+    @include desktop {
+      width: 80%;
+    }
+  }
+  &__map {
+    height: 10rem;
+    width: 100%;
+    display: flex;
+    @include tablet {
+      width: 80%;
+    }
+    @include desktop {
+      width: 70%;
+    }
+
+    @include tablet {
+      height: 15rem;
+      width: 100%;
+    }
+  }
+  &__map-text {
+    font-size: 1rem;
+    background-color: rgba(29, 107, 175, 0.5);
+    border-radius: 10px;
+    color: aliceblue;
+    width: 40%;
+    font-weight: 700;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    margin-bottom: 1rem;
+    margin-top: 0.8rem;
+    margin-left: 1rem;
+    @include tablet {
+      font-size: 1.5rem;
+    }
+  }
 }
 
 .services {
@@ -58,8 +149,15 @@
   margin-top: 1rem;
   justify-content: center;
   align-items: center;
+  border-radius: 5px;
   gap: 1rem;
-  background-color: rgba(190, 218, 246, 0.2);
+  padding: 1rem;
+  background-color: rgba(67, 142, 216, 0.2);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+  }
   &__logo {
     height: 3rem;
     width: 3rem;
@@ -68,8 +166,19 @@
   &__box {
     text-decoration: none;
   }
+  &__text {
+    @include tablet {
+      font-size: 1.5rem;
+    }
+  }
   &__container {
     background-color: rgba(247, 249, 251, 0.5);
+    padding: 1rem;
+    @include tablet {
+      display: flex;
+      justify-content: space-around;
+      padding: 2.5rem;
+    }
   }
 }
 

@@ -11,9 +11,10 @@ function WelcomePage() {
   return (
     <>
       <div className="hero-container">
-        <img src={hero} className="welcome" />
-        <h1 className="hero-title">Welcome!</h1>
-        <p className="hero-subtitle">First Community Lab in Quito</p>
+        <div className="welcome">
+          <h1 className="hero-title">BIOHACK UIO</h1>
+          <p className="hero-subtitle">First Community Lab in Quito</p>
+        </div>
       </div>
       <p className="hero__text">
         Join the first Community Biotechnology Laboratory and be part of a
@@ -39,17 +40,20 @@ function WelcomePage() {
           </div>
         </Link>
       </div>
-      <p className="page__text">Let's make history TOGETHER!</p>
-      <p>Find us here:</p>
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.7960420634586!2d-78.4881284!3d-0.1914706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d59a656b7b7b5d%3A0x5b59af40a7bcbc03!2sEmbajada%20de%20Venezuela!5e0!3m2!1sen!2sca!4v1681244082326!5m2!1sen!2sca"
-        // width="400"
-        // height="300"
-        // style="border:0;"
-        // allowFullScreen=""
-        loading="lazy"
-        referrerPolicy="no-referrer-when-downgrade"
-      ></iframe>
+      <p className="page__text">LET'S MAKE HISTORY TOGETHER!</p>
+      <p className="page__map-text">Find us here:</p>
+      <div className="page__wrapper">
+        <iframe
+          className="page__map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.7960420634586!2d-78.4881284!3d-0.1914706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d59a656b7b7b5d%3A0x5b59af40a7bcbc03!2sEmbajada%20de%20Venezuela!5e0!3m2!1sen!2sca!4v1681244082326!5m2!1sen!2sca"
+          // width="800"
+          // height="200"
+          // style="border:0;"
+          // allowFullScreen=""
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
     </>
   );
 }

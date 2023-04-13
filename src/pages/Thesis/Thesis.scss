@@ -1,0 +1,50 @@
+.thesis {
+  &__wrapper {
+    background-color: rgb(251, 243, 239);
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 85%;
+    height: 16rem;
+    margin-bottom: 1.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding: 0.5rem;
+  }
+  &__image {
+    width: 100%;
+    height: 18rem;
+  }
+  &__title {
+    font-size: 1.5rem;
+    padding: 1rem;
+    font-weight: 400;
+    background-color: rgba(10, 84, 119, 0.5);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 45%;
+    margin-left: 0.5rem;
+    height: 1rem;
+    color: aliceblue;
+    font-size: 1.5rem;
+    align-items: center;
+  }
+  &__item {
+    padding: 1rem;
+    background-color: rgba(234, 181, 112, 0.5);
+  }
+  &__subtitle {
+    font-size: 1.5rem;
+    padding: 1rem;
+    font-weight: 400;
+    background-color: rgba(10, 84, 119, 0.5);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 45%;
+    margin-left: 0.5rem;
+    height: 3rem;
+    color: aliceblue;
+    font-size: 1.5rem;
+    align-items: center;
+  }
+}

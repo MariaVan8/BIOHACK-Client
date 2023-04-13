@@ -1,11 +1,47 @@
+@use "../../styles/partials/mixin" as *;
+@use "../../styles/partials/variables" as *;
+
 .courses {
+  &__big-container {
+    @include tablet {
+      display: flex;
+    }
+  }
+  &__right {
+    display: none;
+    @include tablet {
+      display: contents;
+    }
+  }
+  &__section {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  &__link {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  &__arrow {
+    height: 2rem;
+    width: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   &__header {
-    color: rgb(14, 14, 15);
+    color: rgb(15, 123, 123);
     font-size: 1.3rem;
     text-align: center;
     font-weight: 700;
     height: 2.5rem;
     padding-top: 1rem;
+    @include tablet {
+      font-size: 1.8rem;
+    }
   }
   &__wrapper {
     display: flex;
@@ -53,5 +89,47 @@
     background-size: cover;
     background-position: center;
     text-decoration: none;
+    @include tablet {
+      width: 85%;
+      align-items: center;
+      justify-content: center;
+      left: 0;
+      height: 13rem;
+    }
+  }
+}
+
+.course {
+  &__wrapper {
+    background-color: rgba(245, 239, 236, 0.3);
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 55%;
+    height: 30rem;
+    margin-bottom: 1.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding: 0.5rem;
+  }
+  &__subtitle {
+    font-size: 1.5rem;
+    padding: 1rem;
+    font-weight: 400;
+    background-color: rgba(8, 121, 173, 0.5);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 50%;
+    margin-left: 0.5rem;
+    height: 3rem;
+    color: aliceblue;
+    font-size: 1.5rem;
+    align-items: center;
+  }
+  &__item {
+    padding: 1rem;
+    background-color: rgba(123, 192, 249, 0.2);
+    border-radius: 10px;
+    margin-top: 1rem;
   }
 }

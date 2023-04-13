@@ -1,0 +1,171 @@
+@use "../../styles/partials/mixin" as *;
+@use "../../styles/partials/variables" as *;
+
+.rent {
+  position: relative;
+  &__box {
+    @include tablet {
+      display: flex;
+      gap: 2rem;
+    }
+    @include desktop {
+      display: flex;
+      justify-content: space-evenly;
+      gap: 5rem;
+      margin-left: 3rem;
+      margin-right: 3rem;
+    }
+  }
+  &__title {
+    position: absolute;
+    top: 6%;
+    right: 0;
+    border-radius: 5px;
+    width: 50%;
+    background-image: linear-gradient(
+      to top right,
+      rgba(18, 126, 235, 0.4),
+      rgba(8, 239, 235, 0.4)
+    );
+    background-color: rgba(138, 189, 241, 0.1);
+    font-size: 1.6rem;
+    color: rgb(13, 42, 121);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    @include tablet {
+      font-size: 2.5rem;
+    }
+    @include desktop {
+      font-size: 3rem;
+    }
+  }
+  &__subtitle {
+    position: absolute;
+    background-color: rgba(138, 189, 241, 0.1);
+    right: 0;
+    text-align: center;
+    top: 8%;
+
+    font-size: 1rem;
+    font-weight: 700;
+    color: rgb(13, 42, 121);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: rgba(138, 189, 241, 0.1);
+    @include tablet {
+      font-size: 2;
+      right: 2rem;
+    }
+    @include desktop {
+      font-size: 1.8rem;
+      right: 1%;
+      top: 8.5%;
+    }
+  }
+  &__hero {
+    @include tablet {
+      background-color: rgba(123, 192, 249, 0.2);
+      margin-bottom: 2rem;
+    }
+  }
+  &__image-hero {
+    background-image: url("../../assests/Images/lab3.jpg");
+    background-size: cover;
+    width: 100%;
+    @include tablet {
+      background-size: cover;
+      height: auto;
+    }
+    @include desktop {
+      height: 80vh;
+      width: 100vw;
+    }
+  }
+  &__header {
+    background-color: rgba(8, 121, 173, 0.5);
+    text-align: center;
+    font-size: 400;
+    color: aliceblue;
+    padding: 1rem;
+    border-radius: 20px;
+    @include tablet {
+      margin-left: 2rem;
+      padding: 0.3rem;
+    }
+    @include desktop {
+      width: 82%;
+    }
+  }
+  &__image {
+    border-radius: 10px;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    border-radius: 10px;
+
+    @include tablet {
+      border-radius: 10px;
+      width: 100%;
+      padding-left: 2rem;
+      height: 22rem;
+      display: flex;
+    }
+    @include desktop {
+      width: 80%;
+      padding-left: 3rem;
+    }
+  }
+}
+
+.courses {
+  &__left {
+    display: none;
+    @include tablet {
+      display: contents;
+    }
+  }
+  &__wrapper {
+    background-color: rgba(251, 243, 239, 0.2);
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 55%;
+    height: 30rem;
+    margin-bottom: 1.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding: 0.5rem;
+    @include tablet {
+      height: 90rem;
+      width: 40%;
+    }
+    @include desktop {
+      width: 35%;
+      height: 90rem;
+    }
+  }
+  &__subtitle {
+    font-size: 1.5rem;
+    padding: 1rem;
+    font-weight: 400;
+    background-color: rgba(8, 121, 173, 0.5);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 50%;
+    margin-left: 0.5rem;
+    height: 3rem;
+    color: aliceblue;
+    font-size: 1.5rem;
+    align-items: center;
+    @include tablet {
+      margin-top: 1rem;
+    }
+    @include desktop {
+      height: 2rem;
+      width: 75%;
+    }
+  }
+  &__item {
+    padding: 1rem;
+    background-color: rgba(123, 192, 249, 0.2);
+    border-radius: 10px;
+    margin-top: 1rem;
+  }
+}

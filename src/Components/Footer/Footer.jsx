@@ -13,29 +13,23 @@ function Footer() {
   return (
     <>
       <div className="footer">
-        <div className="footer__bigbox">
-          <div className="footer__box">
-            <div className="footer__container">
-              <img className="footer__icons" src={location} />
-              <p className="footer__text">Av. Amazonas N30-240 y Eloy Alfaro</p>
-            </div>
-            <div className="footer__container">
-              <img className="footer__icons" src={phone} />
-              <p className="footer__text">099-878-969</p>
-            </div>
-            <div className="footer__container">
-              <img className="footer__icons" src={mail} />
-              <p className="footer__text">biohack@hotmail.com</p>
-            </div>
+        <div className="footer__box">
+          <div className="footer__container">
+            <img className="footer__icons" src={location} />
+            <p className="footer__text">Av. Amazonas N30-240 y Eloy Alfaro</p>
           </div>
-
-          <div className="footer__box-test">
-            <img src={logo} alt="logo" className="footer__logo" />
+          <div className="footer__container">
+            <img className="footer__icons" src={phone} />
+            <p className="footer__text">099-878-969</p>
+          </div>
+          <div className="footer__container">
+            <img className="footer__icons" src={mail} />
+            <p className="footer__text">biohack@hotmail.com</p>
           </div>
         </div>
 
         <div className="footer__box1">
-          <p>Follow Us: </p>
+          <p className="footer__text">Follow Us: </p>
           <div className="footer__wrapper">
             <img className="footer__icons" src={instagram} alt="instagram" />
             <img className="footer__icons" src={facebook} alt="facebook" />
@@ -43,6 +37,8 @@ function Footer() {
             <img className="footer__icons" src={whatsapp} alt="whatsapp" />
           </div>
         </div>
+
+        <img src={logo} alt="logo" className="footer__logo" />
       </div>
     </>
   );

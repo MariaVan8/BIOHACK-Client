@@ -6,6 +6,7 @@ import axios from "axios";
 import calendar from "../../assests/logo/calendar1.png";
 import laptop from "../../assests/logo/laptop1.png";
 import certificate from "../../assests/logo/certificate.png";
+import arrow from "../../assests/logo/arrow.png";
 
 const api = "http://localhost:8080";
 

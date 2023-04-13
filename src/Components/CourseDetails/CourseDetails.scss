@@ -1,11 +1,17 @@
+@use "../../styles/partials/mixin" as *;
+@use "../../styles/partials/variables" as *;
+
 .details {
   padding: 0.5rem;
   &__box {
     background-size: cover;
     align-items: center;
-    height: 15rem;
+    height: 10rem;
     box-shadow: 0 4px 10px rgba(18, 18, 18, 0.4);
     background-size: cover;
+    @include tablet {
+      height: 28rem;
+    }
   }
   &__title {
     font-size: 1.6rem;
