@@ -1,7 +1,5 @@
-import { useState } from "react";
 import Profile from "./pages/ProfilePage/Profile.jsx";
 import "./App.css";
-import axios from "axios";
 import Header from "./Components/Header/Header";
 import ServicePage from "./pages/ServicePage/ServicePage.jsx";
 import { BrowserRouter, Routes, Route } from "react-router-dom";

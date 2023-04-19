@@ -4,7 +4,7 @@ import axios from "axios";
 import "../Signup/Signup.scss";
 
 function Signup({ setSignUpToggle }) {
-  const baseUrl = "http://localhost:8080";
+  const baseUrl = process.env.REACT_APP_BASE_URL;
   const signupUrl = `${baseUrl}/signup`;
 
   const handleSignup = (e) => {

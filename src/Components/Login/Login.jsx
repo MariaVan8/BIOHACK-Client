@@ -9,13 +9,13 @@ function Login({ setSignUpToggle }) {
   const [isLoginError, setIsLoginError] = useState(false);
   const [errorMessage, setErrorMessage] = useState("");
 
-  const baseUrl = "http://localhost:8080";
+  const baseUrl = process.env.REACT_APP_BASE_URL;
   const loginUrl = `${baseUrl}/login`;
   const navigate = useNavigate();
 
   const handleLogin = (e) => {
     e.preventDefault();
-
+    console.log("HELLO", e);
     axios
       .post(loginUrl, {
         username: e.target.username.value,

@@ -2,7 +2,12 @@
 @use "../../styles/partials/variables" as *;
 
 .courses {
-  &__big-container {
+  &__big-contain {
+    @include tablet {
+      display: flex;
+    }
+  }
+  &__contain {
     @include tablet {
       display: flex;
     }
@@ -32,7 +37,7 @@
     justify-content: center;
     align-items: center;
   }
-  &__header {
+  &__head {
     color: rgb(15, 123, 123);
     font-size: 1.3rem;
     text-align: center;
@@ -43,7 +48,7 @@
       font-size: 1.8rem;
     }
   }
-  &__wrapper {
+  &__wrap {
     display: flex;
     flex-direction: column;
   }

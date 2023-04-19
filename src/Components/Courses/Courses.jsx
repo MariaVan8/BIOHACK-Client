@@ -27,10 +27,10 @@ function Courses() {
           <img className="courses__arrow" src={arrow} alt="" />
         </Link>
 
-        <h1 className="courses__header">Selection of Courses</h1>
+        <h1 className="courses__head">Selection of Courses</h1>
       </div>
-      <div className="courses__big-container">
-        <div className="courses__wrapper">
+      <div className="courses__contain">
+        <div className="courses__wrap">
           {courses.map((course) => (
             <Link
               to={`/details/${course.id}`}
