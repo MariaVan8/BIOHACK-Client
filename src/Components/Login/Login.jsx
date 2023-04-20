@@ -9,7 +9,7 @@ function Login({ setSignUpToggle }) {
   const [isLoginError, setIsLoginError] = useState(false);
   const [errorMessage, setErrorMessage] = useState("");
 
-  const baseUrl = process.env.REACT_APP_BASE_URL;
+  const baseUrl = process.env.REACT_APP_URL;
   const loginUrl = `${baseUrl}/login`;
   const navigate = useNavigate();
 
