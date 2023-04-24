@@ -26,7 +26,6 @@ function Courses() {
         <Link to={"/"} className="courses__link">
           <img className="courses__arrow" src={arrow} alt="" />
         </Link>
-
         <h1 className="courses__head">Selection of Courses</h1>
       </div>
       <div className="courses__contain">
