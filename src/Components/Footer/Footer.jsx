@@ -31,10 +31,16 @@ function Footer() {
         <div className="footer__box1">
           <p className="footer__text">Follow Us: </p>
           <div className="footer__wrapper">
-            <img className="footer__icons" src={instagram} alt="instagram" />
-            <img className="footer__icons" src={facebook} alt="facebook" />
+            <a href="https://instagram.com/biohack_uio?igshid=YmMyMTA2M2Y=">
+              <img className="footer__icons" src={instagram} alt="instagram" />
+            </a>
+            <a href="http://facebook.com">
+              <img className="footer__icons" src={facebook} alt="facebook" />
+            </a>
             <img className="footer__icons" src={gmail} alt="gmail" />
-            <img className="footer__icons" src={whatsapp} alt="whatsapp" />
+            <a href="https://wa.me/593998015698">
+              <img className="footer__icons" src={whatsapp} alt="whatsapp" />
+            </a>
           </div>
         </div>
 

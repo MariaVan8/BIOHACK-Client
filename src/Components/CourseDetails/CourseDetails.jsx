@@ -7,7 +7,7 @@ import calendar from "../../assests/logo/calendar1.png";
 import laptop from "../../assests/logo/laptop1.png";
 import certificate from "../../assests/logo/certificate.png";
 
-const api = process.env.REACT_APP_SOME_VARIABLE;
+const api = process.env.REACT_APP_URL;
 
 function CourseDetails() {
   // const [courses, setCourses] = useState([]);
