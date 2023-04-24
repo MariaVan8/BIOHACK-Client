@@ -4,7 +4,7 @@ import axios from "axios";
 import "./Courses.scss";
 import arrow from "../../assests/logo/arrow.png";
 
-const api = process.env.REACT_APP_URL;
+const api = process.env.REACT_APP_API_URL;
 
 function Courses() {
   const [courses, setCourses] = useState([]);

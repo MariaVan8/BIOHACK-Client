@@ -34,7 +34,7 @@ function Footer() {
             <a href="https://instagram.com/biohack_uio?igshid=YmMyMTA2M2Y=">
               <img className="footer__icons" src={instagram} alt="instagram" />
             </a>
-            <a href="http://facebook.com">
+            <a href="https://www.facebook.com/BioHackUIO?mibextid=ZbWKwL">
               <img className="footer__icons" src={facebook} alt="facebook" />
             </a>
             <img className="footer__icons" src={gmail} alt="gmail" />
