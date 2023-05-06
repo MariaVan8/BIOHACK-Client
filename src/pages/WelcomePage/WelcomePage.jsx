@@ -14,7 +14,7 @@ function WelcomePage() {
       <div className="hero-container">
         <div className="welcome">
           <h1 className="hero-title">BIOHACK UIO</h1>
-          <p className="hero-subtitle">First Community Lab in Quito</p>
+          <p className="hero-subtitle">First Community Lab in Ecuador</p>
         </div>
       </div>
       <p className="hero__text">
@@ -25,7 +25,7 @@ function WelcomePage() {
         <Link to="/courses" className="services__box">
           <div className="services">
             <img className="services__logo" src={microscope} />
-            <p className="services__text">Microbiology Courses</p>
+            <p className="services__text">Life Science Courses</p>
           </div>
         </Link>
         <Link to="/rental" className="services__box">
@@ -37,7 +37,7 @@ function WelcomePage() {
         <Link to="/thesis" className="services__box">
           <div className="services">
             <img className="services__logo" src={thesis} />
-            <p className="services__text">Thesis Guidance</p>
+            <p className="services__text">Technical Assistance</p>
           </div>
         </Link>
       </div>

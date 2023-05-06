@@ -24,10 +24,9 @@
     width: 50%;
     background-image: linear-gradient(
       to top right,
-      rgba(18, 126, 235, 0.4),
-      rgba(8, 239, 235, 0.4)
+      rgba(18, 126, 235, 0.3),
+      rgba(8, 239, 235, 0.3)
     );
-    background-color: rgba(138, 189, 241, 0.1);
     font-size: 1.6rem;
     color: rgb(13, 42, 121);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
@@ -70,6 +69,7 @@
     background-image: url("../../assests/Images/lab3.jpg");
     background-size: cover;
     width: 100%;
+    padding-bottom: 0.5rem;
     height: 25vh;
     width: 100vw;
     @include tablet {
@@ -82,10 +82,9 @@
     }
   }
   &__header {
-    background-color: rgba(8, 121, 173, 0.5);
     text-align: center;
     font-size: 400;
-    color: aliceblue;
+    color: #044175;
     padding: 1rem;
     border-radius: 20px;
     @include tablet {
