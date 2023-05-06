@@ -18,9 +18,9 @@ function NavBar() {
 
   return (
     <div className="nav">
-      <Link className="nav__login" to={"/login"}>
+      {/* <Link className="nav__login" to={"/login"}>
         Login
-      </Link>
+      </Link> */}
       <Link className="nav__logo" to={"/"}>
         <img className="nav__logo" src={logo} />
       </Link>

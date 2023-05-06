@@ -16,11 +16,14 @@ function Footer() {
         <div className="footer__box">
           <div className="footer__container">
             <img className="footer__icons" src={location} />
-            <p className="footer__text">Av. Amazonas N30-240 y Eloy Alfaro</p>
+            <div className="footer_address">
+              <p className="footer__text">Av. Amazonas N30-240 y Eloy Alfaro</p>
+              <p className="footer__text"> Quito - Ecuador</p>
+            </div>
           </div>
           <div className="footer__container">
             <img className="footer__icons" src={phone} />
-            <p className="footer__text">099-878-969</p>
+            <p className="footer__text">+593 993061886</p>
           </div>
           <div className="footer__container">
             <img className="footer__icons" src={mail} />
