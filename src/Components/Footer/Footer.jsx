@@ -27,7 +27,7 @@ function Footer() {
           </div>
           <div className="footer__container">
             <img className="footer__icons" src={mail} />
-            <p className="footer__text">biohack@hotmail.com</p>
+            <p className="footer__text">biohackuio@gmail.com</p>
           </div>
         </div>
 
