@@ -7,7 +7,7 @@ function Thesis() {
       <div className="thesis__image" alt="thesis"></div>
       <p className="thesis__title">We offer:</p>
       <h1 className="thesis__header">
-        Thesis Guidance and Support Services for University Students and
+        Technical Assistance and Support Services for University Students and
         Laboratory Professionals
       </h1>
       <div className="thesis__wrapper">
