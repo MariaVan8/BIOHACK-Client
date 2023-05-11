@@ -40,7 +40,7 @@ function RentalPage() {
             <p className="courses__item">Wifi</p>
             <p className="courses__item">Mini Cafeteria </p>
             <p className="courses__subtitle">COMMUNITY LAB</p>
-            <p className="courses__item"> Use of Radioactive Equipment</p>
+            <p className="courses__item"> Use of Equipment</p>
             <p className="courses__item">Prototyped</p>
             <p className="courses__item">Entrepreneurship Project</p>
             <p className="courses__item">Experimental Trials</p>
@@ -51,7 +51,6 @@ function RentalPage() {
             <p className="courses__item">Molecular Identification</p>
             <p className="courses__item">Isolations and Purification</p>
             <p className="courses__item">Production of Microorganisms</p>
-            <p className="courses__item">Strains Preservation</p>
             <p className="courses__item">Prepared Culture Media</p>
           </div>
         </div>
