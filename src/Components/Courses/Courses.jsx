@@ -1,23 +1,14 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import axios from "axios";
 import "./Courses.scss";
 import arrow from "../../assests/logo/arrow.png";
-
-const api = process.env.REACT_APP_API_URL;
+import coursesData from "../../data/courses.json";
 
 function Courses() {
   const [courses, setCourses] = useState([]);
 
   useEffect(() => {
-    axios
-      .get(`${api}/courses`)
-      .then((response) => {
-        setCourses(response.data);
-      })
-      .catch((err) => {
-        console.log("err: ", err);
-      });
+    setCourses(coursesData);
   }, []);
 
   return (
@@ -39,7 +30,7 @@ function Courses() {
                 backgroundImage: `url(${course.image})`,
               }}
             >
-              <p className="courses__title"> {course.title}</p>
+              <p className="courses__title">{course.title}</p>
               <p className="courses__time">{course.time}</p>
             </Link>
           ))}
