@@ -51,6 +51,9 @@
   &__wrap {
     display: flex;
     flex-direction: column;
+    @include tablet {
+      width: 60%;
+    }
   }
   &__list {
     display: flex;
@@ -105,6 +108,9 @@
 }
 
 .course {
+  @include tablet {
+    width: 35%;
+  }
   &__wrapper {
     background-image: url(../../../public/images/tech.jpg);
     background-size: cover;
