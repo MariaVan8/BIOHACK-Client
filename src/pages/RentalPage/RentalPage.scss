@@ -121,6 +121,9 @@
     @include tablet {
       display: contents;
     }
+    @include desktop {
+      display: contents;
+    }
   }
   &__wrapper {
     background-color: rgba(251, 243, 239, 0.2);

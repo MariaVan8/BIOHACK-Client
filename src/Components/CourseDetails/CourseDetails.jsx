@@ -49,7 +49,7 @@ function CourseDetails() {
           {course.topics
             ? course?.topics.map((item, index) => (
                 <p className="details" key={index}>
-                  - {item}
+                  {item}
                 </p>
               ))
             : ""}

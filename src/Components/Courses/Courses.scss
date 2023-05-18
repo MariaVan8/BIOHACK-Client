@@ -106,12 +106,13 @@
 
 .course {
   &__wrapper {
-    background-color: rgba(245, 239, 236, 0.3);
+    background-image: url(../../../public/images/tech.jpg);
+    background-size: cover;
     border-radius: 1rem;
     overflow: hidden;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    width: 55%;
-    height: 30rem;
+    width: 88%;
+    height: 40rem;
     margin-bottom: 1.5rem;
     margin-left: 1rem;
     margin-right: 1rem;
@@ -119,21 +120,26 @@
   }
   &__subtitle {
     font-size: 1.5rem;
-    padding: 1rem;
+    padding: 0.5rem;
     font-weight: 400;
     background-color: rgba(8, 121, 173, 0.5);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-    width: 50%;
-    margin-left: 0.5rem;
+    // width: 90%;
+    // margin-left: 0.5rem;
     height: 3rem;
+    text-align: center;
     color: aliceblue;
     font-size: 1.5rem;
     align-items: center;
   }
   &__item {
     padding: 1rem;
-    background-color: rgba(123, 192, 249, 0.2);
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    background-color: rgba(196, 221, 242, 0.382);
     border-radius: 10px;
     margin-top: 1rem;
   }

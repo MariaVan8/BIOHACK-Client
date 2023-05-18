@@ -35,16 +35,16 @@ function Courses() {
             </Link>
           ))}
         </div>
-        <div className="courses__right">
+        <div className="course">
           <div className="course__wrapper">
             <p className="course__subtitle">Available Technology</p>
-            <p className="course__item">-Molecular Biology</p>
-            <p className="course__item">-Microbiology</p>
-            <p className="course__item">-Natural Extracts</p>
-            <p className="course__item">-Sterile Area</p>
-            <p className="course__item">-Agroindustry</p>
-            <p className="course__item">-Microscopy</p>
-            <p className="course__item">-Biomaterials</p>
+            <p className="course__item">Molecular Biology</p>
+            <p className="course__item">Microbiology</p>
+            <p className="course__item">Natural Extracts</p>
+            <p className="course__item">Sterile Area</p>
+            <p className="course__item">Agroindustry</p>
+            <p className="course__item">Microscopy</p>
+            <p className="course__item">Biomaterials</p>
           </div>
         </div>
       </div>
