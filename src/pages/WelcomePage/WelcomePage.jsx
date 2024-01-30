@@ -18,7 +18,7 @@ function WelcomePage() {
         </div>
       </div>
       <p className="hero__text">
-        Join the first Community Biotechnology Laboratory and be part of a
+        Join HOLA  MUNDO the first Community Biotechnology Laboratory and be part of a
         Scientific Revolution
       </p>
       <div className="services__container">
